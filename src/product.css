@@ -1,0 +1,73 @@
+@font-face {
+    font-family: Poppins;
+    src: url(Assets/Poppins/Poppins-Bold.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+img{
+    position: absolute;
+}
+
+
+#VectorMidRight{
+    top: 150px;
+    right: 0px;
+}
+
+#VectorTopLeft{
+    top: 0px;
+    left: 0px;
+}
+
+
+#VectorMidMid{
+    top: 450px;
+    right: 240px;
+}
+
+#VectorMidLeft{
+    top: 400px;
+    left: 0px;
+}
+
+#VectorTopMid{
+    top: 19.41%;
+    right: 30%;
+}
+
+button{
+    position: absolute;
+    top: 527px;
+    left: 361px;
+    width: 249px;
+    height: 60px;
+
+    background-image: linear-gradient(90deg, rgba(115, 224, 169, 1), rgba(91, 104, 223, 1));
+    border: 0px;
+    border-radius: 50px;
+
+    font-family: Poppins;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.title{
+    position: absolute;
+    width: 539px;
+    height: 192px;
+    left: 29.69%;
+    top: 48.16%;
+    
+    
+    color: #212121;
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 700;
+}
+
