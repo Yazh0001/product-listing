@@ -3,6 +3,11 @@
     src: url(Assets/Poppins/Poppins-Bold.ttf);
 }
 
+@font-face {
+    font-family: PoppinsThin;
+    src: url(Assets/Poppins/Poppins-Regular.ttf);
+}
+
 *{
     box-sizing: border-box;
     padding: 0px;
@@ -40,6 +45,16 @@ img{
     right: 30%;
 }
 
+#VectorPlant{
+    right: 5vw;
+    top: 150vh;
+}
+
+#Plant{
+    right: 7vw;
+    top: 110vh;
+}
+
 nav{
     position: absolute;
     width: 90vw;
@@ -56,6 +71,10 @@ nav{
     font-weight: 700;
     color: white;
     display: inline;
+}
+
+.grape:hover{
+    cursor: pointer;
 }
 
 #options{
@@ -137,3 +156,31 @@ button:hover{
     font-weight: 700;
 }
 
+.container2{
+    position: absolute;
+    width: 50%;
+    top: 150vh;
+    left: 5vw;
+}
+
+.subtitle{
+    width: 523px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 36px;
+    color: #212121;
+}
+
+.paragraph{
+    font-family: PoppinsThin;
+    font-weight: 500;
+    font-size: 24px;
+    width: 643px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}

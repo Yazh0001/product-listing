@@ -4,17 +4,28 @@ function App() {
   return (
     <>
       <div className='blobs'>
-        <img id='VectorTopLeft' src={require('./Assets/Images/VectorTopLeft.png')} alt='plant'></img>
-        <img id='VectorMidRight' src={require('./Assets/Images/VectorMidRight.png')} alt='plant'></img>
-        <img id='VectorTopMid' src={require('./Assets/Images/VectorTopMid.png')} alt='plant'></img>
-        <img id='VectorMidMid' src={require('./Assets/Images/VectorMidMid.png')} alt='plant'></img>
-        <img id='VectorMidLeft' src={require('./Assets/Images/VectorMidLeft.png')} alt='plant'></img>
+        <img id='VectorTopLeft' src={require('./Assets/Images/VectorTopLeft.png')} alt='blob'></img>
+        <img id='VectorMidRight' src={require('./Assets/Images/VectorMidRight.png')} alt='blob'></img>
+        <img id='VectorTopMid' src={require('./Assets/Images/VectorTopMid.png')} alt='blob'></img>
+        <img id='VectorMidMid' src={require('./Assets/Images/VectorMidMid.png')} alt='blob'></img>
+        <img id='VectorMidLeft' src={require('./Assets/Images/VectorMidLeft.png')} alt='blob'></img>
+        <img id='VectorPlant' src={require('./Assets/Images/VectorPlant.png')} alt='blob'></img>
+        <img id='Plant' src={require('./Assets/Images/pngwing 1.png')} alt='Plant'></img>
       
       
       </div>
       <div className='container1'>
         <div className='title'>LOREM IPSUM DOLOR SIT AMET.</div>
-        <button>Read More</button>
+        <button className='readmore1'>Read More</button>
+      </div>
+      <div className='container2'>
+        <div className='subtitle'>LOREM IPSUM DOLOR SIT AMET.</div>
+        <div className='paragraph'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <button id='readmore2'>Read More</button>
       </div>
       <nav>
         <div id='topgrape' className='grape'>Chilled Grape</div>
