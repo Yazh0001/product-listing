@@ -181,9 +181,9 @@ button:hover{
 }
 
 .productContainer{
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 250vh;
+    top: 200vh;
 }
 
 .bigCard{
@@ -243,7 +243,15 @@ button:hover{
     margin-left: 20px;
 }
 
+.bottom{
+    position: relative;
+    height: 460px;
+}
 
+#botGrape{
+    bottom: 40%;
+    left: 5vw;
+}
 
 ::-webkit-scrollbar {
     display: none;

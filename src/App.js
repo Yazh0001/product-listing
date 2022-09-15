@@ -1,28 +1,20 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './productListing.css'
 import ProductList from './ProductList';
+import axios from 'axios'
 function App() {
   const [productObjects, setProductObjects] = useState([
     {
       "product_name": "semper interdum mauris",
       "image": "http://dummyimage.com/281x278.png/5fa2dd/ffffff",
       "price": 86.87,
-    },
-    {
-      "product_name": "semper interdum mauris",
-      "image": "http://dummyimage.com/281x278.png/5fa2dd/ffffff",
-      "price": 86.87,
-    },
-    {
-      "product_name": "semper interdum mauris",
-      "image": "http://dummyimage.com/281x278.png/5fa2dd/ffffff",
-      "price": 86.87,
-    },
-    {
-      "product_name": "semper interdum mauris",
-      "image": "http://dummyimage.com/281x278.png/5fa2dd/ffffff",
-      "price": 86.87,
     }])
+
+    useEffect(()=>{
+      axios.get('https://my-json-server.typicode.com/TomSearle/cb-devtest-api/products').then((res)=>{
+        setProductObjects(res.data[0])
+      })
+    }, [])
 
   return (
     <>
@@ -34,7 +26,8 @@ function App() {
         <img id='VectorMidLeft' src={require('./Assets/Images/VectorMidLeft.png')} alt='blob'></img>
         <img id='VectorPlant' src={require('./Assets/Images/VectorPlant.png')} alt='blob'></img>
         <img id='Plant' src={require('./Assets/Images/pngwing 1.png')} alt='Plant'></img>
-      
+
+        
       
       </div>
       <div className='container1'>
@@ -52,6 +45,7 @@ function App() {
       </div>
 
       <ProductList objects={productObjects}></ProductList>
+      
 
       <nav>
         <div id='topgrape' className='grape'>Chilled Grape</div>
