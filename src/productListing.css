@@ -314,6 +314,12 @@ button:hover{
 
 }
 
+#loadMore{
+    position: absolute;
+    top: -30px;
+    left: 40vw;
+}
+
 /* ::-webkit-scrollbar {
     display: none;
 } */

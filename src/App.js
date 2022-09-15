@@ -16,6 +16,7 @@ function App() {
       })
     }, [])
 
+
   return (
     <>
       <div className='blobs'>
@@ -44,7 +45,7 @@ function App() {
         <button id='readmore2'>Read More</button>
       </div>
 
-      <ProductList objects={productObjects}></ProductList>
+      <ProductList objects={productObjects} setProductObjects={setProductObjects}></ProductList>
       
 
       <nav>
