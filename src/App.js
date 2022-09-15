@@ -1,6 +1,29 @@
-import React from 'react';
-import './product.css'
+import React, {useState} from 'react';
+import './productListing.css'
+import ProductList from './ProductList';
 function App() {
+  const [productObjects, setProductObjects] = useState([
+    {
+      "product_name": "semper interdum mauris",
+      "image": "http://dummyimage.com/281x278.png/5fa2dd/ffffff",
+      "price": 86.87,
+    },
+    {
+      "product_name": "semper interdum mauris",
+      "image": "http://dummyimage.com/281x278.png/5fa2dd/ffffff",
+      "price": 86.87,
+    },
+    {
+      "product_name": "semper interdum mauris",
+      "image": "http://dummyimage.com/281x278.png/5fa2dd/ffffff",
+      "price": 86.87,
+    },
+    {
+      "product_name": "semper interdum mauris",
+      "image": "http://dummyimage.com/281x278.png/5fa2dd/ffffff",
+      "price": 86.87,
+    }])
+
   return (
     <>
       <div className='blobs'>
@@ -27,6 +50,9 @@ function App() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
         <button id='readmore2'>Read More</button>
       </div>
+
+      <ProductList objects={productObjects}></ProductList>
+
       <nav>
         <div id='topgrape' className='grape'>Chilled Grape</div>
         <div id='options'>
