@@ -18,6 +18,10 @@ img{
     position: absolute;
 }
 
+body{
+    min-width: 900px;
+}
+
 
 #VectorMidRight{
     top: 150px;
@@ -249,10 +253,67 @@ button:hover{
 }
 
 #botGrape{
-    bottom: 40%;
+    bottom: 45%;
     left: 5vw;
 }
 
-::-webkit-scrollbar {
-    display: none;
+#botParagraph{
+    width: 459px;
+    left: 5vw;
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-family: PoppinsThin;
+    font-weight: 100;
+    font-size: 22px;
 }
+
+.container3{
+    position: absolute;
+    right: 0px;
+    top: 30%;
+}
+
+.footerBlock{
+    display: inline-table;
+    margin: 50px;
+    max-width: 15vw;
+}
+
+.footerTitle{
+    font-family: PoppinsThin;
+    font-weight: 100;
+    font-size: 20px;
+    
+    background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    margin-bottom: 10px;
+}
+
+.footerItem{
+    font-family: PoppinsThin;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(21, 21, 21);
+
+    margin-top: 10px;
+}
+
+.followBox{
+    width: 40px;
+    height: 40px;
+
+    background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+    border-radius: 8px;
+    background-color: black;
+    display: inline-block;
+    margin: 10px;
+
+}
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
